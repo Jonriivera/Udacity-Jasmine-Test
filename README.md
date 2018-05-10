@@ -10,7 +10,6 @@ Download or clone all the files via this repo. If the jasmine script has not bee
 
 The tests ran against the free reader tested:
 <br>
-<br>
 1) That the allFeeds variables is defined and not empty and that the names and URLs of the feeds were defined and not empty.
 <br>
 2) That by default the menu is hidden and by clicking it the visibility is toggled.
