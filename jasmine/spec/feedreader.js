@@ -88,8 +88,6 @@ $(function() {
 
   /* TODO: Write a new test suite named "Initial Entries" */
   describe('Initial Entries', function() {
-
-
     /* TODO: Write a test that ensures when the loadFeed
     * function is called and completes its work, there is at least
     * a single .entry element within the .feed container.
@@ -115,9 +113,24 @@ $(function() {
     * by the loadFeed function that the content actually changes.
     * Remember, loadFeed() is asynchronous.
     */
-    it('should change its content when a new feed is loaded using loadFeed', function() {
+    var initialContent,
+        changedContent;
 
+    beforeEach(function(done) {
+      loadFeed(0, function() {
+        initialContent = $('.header-title').html();
+        loadFeed(1, function() {
+        changeContent = $('.header-title').html();
+        done();
+        });
+      });
     });
-  });
 
-});
+    it('new feed should change content', function(done) {
+      expect(initialContent !== changedContent).toBe(true);
+      done();
+      });
+    });
+
+
+}());
