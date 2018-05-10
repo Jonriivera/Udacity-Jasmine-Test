@@ -6,7 +6,7 @@ In this project we were asked to create test suites and tests to insure the func
 
 Download or clone all the files via this repo. If the jasmine script has not been added to the index.html file, add ```<script src="jasmine/spec/feedreader.js></script>"``` to the bottom of the body element. Then when you open index.html in your browser the Jasmine application should show at the bottom of the web page.
 
-## What tests are relian
+## What tests I ran
 
 The tests ran against the free reader tested:
 <br>
