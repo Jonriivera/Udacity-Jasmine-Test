@@ -71,7 +71,7 @@ $(function() {
     * should have two expectations: does the menu display when
     * clicked and does it hide when clicked again.
     */
-    it('menu is visible when clicked', function() {
+    it('menu should toggle visibilty when clicked', function() {
       var menuIcon = $('.menu-icon-link');
 
       menuIcon.click();
@@ -102,16 +102,22 @@ $(function() {
       });
     });
 
-    it('when loadFeed is called .feed is not empty', function() {
+    it('.feed should not empty after calling loadFeed', function() {
       expect($('.feed').length).not.toBe(0);
     });
 
-  /* TODO: Write a new test suite named "New Feed Selection" */
+  });
 
+
+  /* TODO: Write a new test suite named "New Feed Selection" */
+  describe('New Feed Selection', function() {
     /* TODO: Write a test that ensures when a new feed is loaded
     * by the loadFeed function that the content actually changes.
     * Remember, loadFeed() is asynchronous.
     */
+    it('should change its content when a new feed is loaded using loadFeed', function() {
+
+    });
   });
 
 });
